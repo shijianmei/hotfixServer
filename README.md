@@ -41,7 +41,7 @@ node.js 8.14.0+
 ```
 module.exports = {
     db: {
-        database: "lin-cms",
+        database: "aiways-ios-tool",
         host: "localhost",
         port: 3306,
         username: "root",
