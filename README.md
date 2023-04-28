@@ -10,13 +10,18 @@ http://localhost:5000/v1/validHotFix
 
 请求参数:
 | 参数名 | 位置	   |  类型	  | 必填	|  说明 |
+| --------   | -----:  | :----:  | :----:  |
 | version | query | string | 否 | 3.16.0 |
 
+
+
 - 获取是否存在最新热修复包接口
+
 https://hotfix-ios-api-pre.ai-ways.com/v1/exitHotFix
 
 请求参数:
 | 参数名 | 位置	   |  类型	  | 必填	|  说明 |
+| --------   | -----:  | :----:  |  :----:  |
 | version | query | string | 否 | 示例值： 3.16.0 |
 | patch | query| string | 否 | 示例值：22 |
 
@@ -33,18 +38,18 @@ node.js 8.14.0+
 
 - 数据库配置：
   打开工程的app/config/secure.js
-`
+```
 module.exports = {
-db: {
-database: "lin-cms",
-host: "localhost",
-port: 3306,
-username: "root",
-password: "12345678",
-logging: false
-}
+    db: {
+        database: "lin-cms",
+        host: "localhost",
+        port: 3306,
+        username: "root",
+        password: "12345678",
+        logging: false
+    }
 };
-`
+```
 - 域名配置：
 打开工程的app/config/setting.js,配置domain及文件上传域名
 
